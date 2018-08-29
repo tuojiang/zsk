@@ -32,7 +32,7 @@ public class HomeController {
     UserService userService;
 
     private List<ViewObject> getQuestions(int userId,int offset,int limit){
-        List<Question> questionList =questionService.getQuestions(userId,offset,limit);
+        List<Question> questionList =questionService.getLatestQuestions(userId,offset,limit);
         List<ViewObject> vos = new ArrayList<>();
         for (Question question : questionList){
             ViewObject vo = new ViewObject();

@@ -9,7 +9,8 @@
         <setting name="cacheEnabled" value="true"/>
         <!-- 设置驱动程序等待数据库响应的秒数 -->
         <setting name="defaultStatementTimeout" value="3000"/>
-        <!-- 启用从经典数据库列名A_COLUMN到驼峰式经典Java属性名称aColumn的自动映射 -->
+        <!-- 启用从经典数据库列名A_COLUMN到驼峰式经典Java属性名称aColumn的自动映射
+        如head_url->headUrl-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
         <!-- Allows JDBC support for generated keys. A compatible driver is required.
         This setting forces generated keys to be used if set to true,
